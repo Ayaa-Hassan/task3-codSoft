@@ -50,7 +50,7 @@ export default function Navbar() {
               
             </div>
             <div >
-                <ul className={nav ? " bg-white shadow-xl  md:hidden top-[70px] left-0 w-full flex-col flex items-center text-lg py-4 font-semibold absolute min-color border-t border-[#695AA6]  z-50" : "hidden left-[-100%]"}>
+                <ul onClick={navHandel} className={nav ? " bg-white shadow-xl  md:hidden top-[70px] left-0 w-full flex-col flex items-center text-lg py-4 font-semibold absolute min-color border-t border-[#695AA6]  z-50" : " absolute top-0 left-[-100%] ease-in"}>
                     <li className=' py-2'>
                         <a href="#home"> Home</a>
                     </li>
