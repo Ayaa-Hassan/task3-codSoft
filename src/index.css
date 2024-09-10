@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+@layer base{
+*{
+    scroll-behavior: smooth;
+}
+.min-color{
+    @apply text-[#695AA6]
+}
+.overlay{
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.title{
+    @apply text-base text-[#111] opacity-60 font-normal  
+}
+h2{
+    @apply text-2xl md:text-4xl   font-extrabold text-[#695aa6]   mt-1
+}
+h3{
+    @apply text-base md:text-xl font-extrabold text-[#695aa6] my-6
+}
+
+.card:hover p{
+    @apply bottom-[7px] opacity-100 visible
+
+}
+.card:hover img{
+    @apply mt-[5px] w-[45px] mb-[15px]
+
+}
+.overlay-card{
+    background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+}
+.folio-card:hover .overlay-card{
+    @apply opacity-100 visible w-full h-full rounded-[0]
+}
+
+
+}
